@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
 
-function App() {
+const Counter=()=> {
+  const [value,setValue] = useState(0); //eslint-disable-next-line
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+    <h1>현재 값은 [ {value} ]입니다.</h1>
+    <button onClick={()=>setValue(value-1)}>-1</button>
+    <button onClick={()=>setValue(value+1)}>+1</button>
+  </>
   );
 }
 
-export default App;
+export default Counter;
