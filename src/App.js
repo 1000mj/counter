@@ -6,9 +6,10 @@ const Counter=()=> {
 
   return (
   <>
-    <h1>현재 값은 [ {value} ]입니다.</h1>
-    <button onClick={()=>setValue(value-1)}>-1</button>
-    <button onClick={()=>setValue(value+1)}>+1</button>
+    <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
+    <button className="btn btn-outline btn-success">Success</button>
   </>
   );
 }
