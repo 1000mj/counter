@@ -1,17 +1,18 @@
-import React, { useState } from "react";
+// import StopWatch from "./StopWatch";
+// import NumberCounter from "./NumberCounter";
+import React from "react";
 
-const Counter=()=> {
-  const [value,setValue] = useState(0); //eslint-disable-next-line
-  
+import MemoEx from "./MemoEx";
+// import Popup from "./Popup";
 
+const App=()=> {
   return (
-  <>
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    <button className="btn btn-outline btn-success">Success</button>
-  </>
+    <>
+      {/* <StopWatch /> */}
+      {/* <NumberCounter /> */}
+      <MemoEx />
+    </>
   );
-}
+};
 
-export default Counter;
+export default App;
