@@ -1,8 +1,8 @@
 // import StopWatch from "./StopWatch";
 // import NumberCounter from "./NumberCounter";
 import React from "react";
-
-import MemoEx from "./MemoEx";
+import StopWatch from "./stopwatch";
+// import MemoEx from "./MemoEx";
 // import Popup from "./Popup";
 
 const App=()=> {
@@ -10,7 +10,7 @@ const App=()=> {
     <>
       {/* <StopWatch /> */}
       {/* <NumberCounter /> */}
-      <MemoEx />
+      <StopWatch />
     </>
   );
 };
