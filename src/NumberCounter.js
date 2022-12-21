@@ -20,6 +20,7 @@ function NumberCounter(){
         숫자 : {no}
         <hr/>
         <button onClick={()=>setNo(no+1)}>증가</button>
+        /
         <button onClick={()=>setNo(no-1)}>감소</button>
         {noIsEvenDiv}
         {noIs8multipleDiv}
