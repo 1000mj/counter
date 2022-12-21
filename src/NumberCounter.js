@@ -11,7 +11,6 @@ function NumberCounter(){
   const noIs8multipleDiv =(
     <>
       {no%8 ==0?<div>8의 배수가 맞습니다.</div>:<div>8의 배수가 아닙니다.</div>}
-
     </>
   );
 
