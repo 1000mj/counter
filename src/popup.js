@@ -12,8 +12,6 @@ function Popup() {
       >
         팝업{popupVisible ? "닫기" : "열기"}
       </button>
-      <hr />
-      {`popupVisible : ${popupVisible}`}
       {popupVisible && <div style={{ width: 100, height: 100, border }}></div>}
     </>
   );
