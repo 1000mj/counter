@@ -21,11 +21,22 @@ const MemoEx =()=>{
     setNumber('');
   }
 
+  const noNo =()=>{
+    if (number===''){
+      alert('숫자를 입력 하세요.')
+      return
+    }
+  }
+
 
   return(
     <>
-      <input value={number} onChange={onChange}/>
-      <button onClick={onInsert}>등록</button>
+      <input 
+      value={number} 
+      onChange={onChange}
+      type='number'
+      />
+      <button onClick={onInsert} type='button' >등록</button>
       <ul>
         {list.map((value,index)=>(
           <li key={index}>{value}</li>
